@@ -80,12 +80,12 @@
 
 --10.	Add the code to order the query in #9 from highest to lowest average star rating. Which company with more than 5000 reviews across all locations in the dataset has the highest star rating? What is that rating?
 
-SELECT DISTINCT(company), AVG(star_rating) AS avg_star_rating
-FROM data_analyst_jobs
-WHERE review_count >5000
-	AND company IS NOT NULL
-GROUP BY company
-ORDER BY avg_star_rating DESC
+-- SELECT DISTINCT(company), AVG(star_rating) AS avg_star_rating
+-- FROM data_analyst_jobs
+-- WHERE review_count >5000
+-- 	AND company IS NOT NULL
+-- GROUP BY company
+-- ORDER BY avg_star_rating DESC
 
 --Answer:  It's a 6 way tie between American Express, General Motors, Kaiser Permanente, Microsoft, Nike, and Unilever.  Rating: 4.2
 
